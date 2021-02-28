@@ -1,0 +1,47 @@
+@media (max-width: 1025px) {
+    .wrapper {
+        padding: 4em 1em 0;
+    }
+
+    .header {
+        width: 100%;
+    }
+
+    .form__input-city {
+        width: 40%;
+    }
+    
+    .form__input-country {
+        width: 40%;
+    }
+
+    .weather__info {
+        width: 100%;
+    }
+}
+
+@media (max-width: 737px) {
+    .wrapper {
+        height: 100%;
+    }
+
+    .weather__city {
+        font-size: 2em;
+    }
+    
+    .weather__country {
+        font-size: 1em;
+    }
+
+    .weather__qual > div > p {
+        font-size: 1.1em;
+        margin: 0;
+        text-align: right;
+    }
+}
+
+@media (max-width: 415px) {
+    .wrapper {
+        height: 100%;
+    }
+} 

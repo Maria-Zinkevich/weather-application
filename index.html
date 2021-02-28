@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="media.css">
+	<script src="main.js" defer></script>
+
+	<script src='https://api.mapbox.com/mapbox-gl-js/v1.8.0/mapbox-gl.js'></script>
+	<link href='https://api.mapbox.com/mapbox-gl-js/v1.8.0/mapbox-gl.css' rel='stylesheet' />
+	<script src='https://tiles.locationiq.com/v3/js/liq-styles-ctrl-gl.js?v=0.1.7'></script>
+	<link href='https://tiles.locationiq.com/v3/css/liq-styles-ctrl-gl.css?v=0.1.7' rel='stylesheet' />
+	<title>Weather</title>
+</head>
+<body>
+	
+	<div class="wrapper">
+		<header class="header">
+			<form class="form" action="#">
+				<input class="form__input form__input-city" type="text" placeholder="City">
+				<input class="form__input form__input-country" type="text" placeholder="Country">
+				<input class="form__button" type="submit" value="Send">
+			</form>
+			<div class="error__container">
+				<p></p>
+			</div>
+		</header>
+
+		<section class="weather__info">
+			<div class="wrap-left">
+				<div class="weather__location">
+					<h1 class="weather__city">&#160;</h1>
+					<p class="weather__country"></p>
+				</div>
+	
+				<div class="weather__icon"></div>
+				<div class="weather__temperature">
+					<p></p>
+				</div>
+			</div>
+			
+			<div class="wrap-right">
+				<div class="weather__qual">
+					<div class="weather__feels">
+						<p></p>
+					</div>
+					<div class="weather__wind-speed">
+						<p></p>
+					</div>
+					<div class="weather__wind-direction">
+						<p></p>
+					</div>
+					<div class="weather__pressure">
+						<p></p>
+					</div>
+					<div class="weather__time">
+						<p></p>
+					</div>
+				</div>
+			</div>
+			<div id="map"></div>
+		</section>
+
+		<footer>
+			<p>&#169; Maria Zinkevich, 2021</p>
+		</footer>
+	</div>
+</body>
+</html>
