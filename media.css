@@ -10,7 +10,7 @@
     .form__input-city {
         width: 40%;
     }
-    
+
     .form__input-country {
         width: 40%;
     }
@@ -28,7 +28,7 @@
     .weather__city {
         font-size: 2em;
     }
-    
+
     .weather__country {
         font-size: 1em;
     }
