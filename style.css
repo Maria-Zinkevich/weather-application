@@ -6,12 +6,16 @@
     color: #456268;
 }
 
+body {
+    height: 100vh;
+}
+
 .wrapper {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     width: 100%;
-    height: 100vh;
+    height: 100%;
     margin: 0 auto;
     padding: 4em 4em 0;
 
@@ -88,7 +92,7 @@
 
     font-size: 1.1em;
     color: #FF0000;
-    }
+}
 
 /* ===== SECTION =====*/
 .weather__info {
@@ -129,7 +133,7 @@
     display: flex;
     justify-content: center;
     height: 120px;
-}
+    }
 
 .weather__icon > img {
     width: 100px;
@@ -146,7 +150,7 @@
     justify-content: center;
 }
 
-    .weather__temperature > p {
+.weather__temperature > p {
     padding: .2em;
     font-size: 3.5em;
 }
