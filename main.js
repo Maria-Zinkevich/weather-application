@@ -1,9 +1,9 @@
 'use strict';
 
 let userCity = document.querySelector('.form__input-city');
-let	userCountry = document.querySelector('.form__input-country');
-let	button = document.querySelector('.form__button');
-let	errorMessage = document.querySelector('.error__container > p');
+let userCountry = document.querySelector('.form__input-country');
+let button = document.querySelector('.form__button');
+let errorMessage = document.querySelector('.error__container > p');
 let map = document.querySelector('#map');
 let weatherCity = document.querySelector('.weather__city');
 let weatherCountry = document.querySelector('.weather__country');
@@ -13,7 +13,7 @@ let weatherWindSpeed = document.querySelector('.weather__wind-speed > p');
 let weatherWindDir = document.querySelector('.weather__wind-direction > p');
 let weatherPressure = document.querySelector('.weather__pressure > p');
 let weatherTime = document.querySelector('.weather__time > p');
-let	iconOfWeather;
+let iconOfWeather;
 
 locationiq.key = 'pk.cbad561504a1df430bf6fe7c1f4c0c9a';
 
@@ -66,7 +66,7 @@ function showInfo(obj) {
 }
 
 function showContent(obj) {
-	let localtime = new Date(obj.localtime).toLocaleTimeString().slice(0,-3);
+    let localtime = new Date(obj.localtime).toLocaleTimeString().slice(0,-3);
 
     let weatherInfo = document.querySelector('.weather__info');
  
